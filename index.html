@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="west.jpeg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle">  Graduation </h2>
+  <p id="albumDescription"> Lançado em 2007, Graduation é o terceiro álbum de estúdio de Kanye West e um marco na evolução do hip hop, destacando-se por sua produção inovadora e pela mistura de diferentes estilos musicais, como eletrônica, rock e soul. Com o álbum, Kanye deu um passo significativo em direção a uma sonoridade mais experimental, distanciando-se do estilo mais tradicional de rap para abraçar sons mais progressivos e vanguardistas. O álbum aborda temas como sucesso, superação, crítica social e introspecção, com faixas que são tanto pessoais quanto mais universais. O destaque vai para os singles de sucesso como "Stronger", "Good Life" e "Flashing Lights", que se tornaram hinos da música pop e hip hop da época. Graduation também foi um marco em termos de vendas e impacto cultural, representando a ascensão de Kanye West como uma das figuras mais importantes e inovadoras do cenário musical contemporâneo. A sonoridade ousada e a fusão de gêneros fizeram deste álbum uma referência não apenas no hip hop, mas também no mainstream da música pop. </p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> Good Morning -
+    Champion -
+    Stronger -
+    I Wonder -
+    Good Life (feat. T-Pain) -
+    Can't Tell Me Nothing.
+    <p id="albumDescription"> <strong>Lado 2:</strong> Drunk and Hot Girls (feat. Mos Def) -
+        Flashing Lights (feat. Dwele) -
+        Everything I Am -
+        The Glory -
+        Homecoming (feat. Chris Martin) -
+        Big Brother.</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
